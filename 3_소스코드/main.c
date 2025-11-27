@@ -2,18 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
-    1. 설계에서 정의한 변수 선언
-    
+// 1. 전역 변수 선언
 int answer;   // 랜덤 정답 숫자
 int guess;    // 사용자 입력 숫자
 int count = 0; // 시도 횟수
-
-*/
-
-
-/*
-    2. [알고리즘]에서 설계한 핵심 기능 함수들을 여기에 선언하세요.
 
 
 // 정답 숫자를 생성하는 함수
@@ -22,7 +14,7 @@ void generateAnswer() {
     answer = rand() % 100 + 1; // 1~100 사이 정답 생성
 }
 
-// 입력 숫자를 비교하는 함수
+// 입력 숫자 비교
 void compareGuess(int guess) {
     if (guess > answer) {
         printf("너무 큽니다.\n");
@@ -36,15 +28,7 @@ void compareGuess(int guess) {
 }
 
 
-
-
-*/
-
-    /*
-        3. [알고리즘]에서 설계한 main 함수의 흐름을
-           여기에 C언어로 자유롭게 구현하세요.
-
-       int main() {
+int main() {
 
     printf("--- 숫자 맞추기 게임 시작! ---\n");
 
@@ -68,6 +52,3 @@ void compareGuess(int guess) {
 
     return 0;
 }
-
-
-    */
